@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Algorithm Solutions</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet" />
+ 
+  </head>
+  <body>
+  <div class="container">
+    <h1>Hello, Coders!</h1>
+
+    <h2>Palindrome Number</h2>
+    <p>
+      Given an integer x, return true if x is a 
+      palindrome, and false otherwise.
+    </p>
+
+    <p> <pre><code class="check-num"></code></pre></p>
+    <p class="sol1">Result: </p>
+   
+   
+ 
+    </div>
+    <div class="container">
+      <h2>
+        Multiple 2 numbers (test)
+      </h2>
+      <p>Multiply two numbers</p>
+        <p> <pre><code class="fixed-length"></code></pre></p>
+    <p class="sol2">Result: </p>
+   
+
+    </div>
+    <script>
+    fetch('dist/app.js')
+    .then(response => response.text())
+    .then(code => {
+        document.querySelector('.check-num').innerHTML = code;
+        document.querySelector('.sol1').innerHTML = 'Result: ' + isPalindrome(num);
+ 
+ });
+</script>
+<!-- <script>
+  fetch('dist/sol2.js')
+  .then(response => response.text())
+  .then(code => {
+      document.querySelector('.fixed-length').innerHTML = code;
+      document.querySelector('.sol2').innerHTML = 'Result: ' + multiply(num1, num2);
+
+});
+</script> -->
+<script src="dist/app.js" ></script>
+<script>
+  fetch('dist/sol2.js')
+  .then(response => response.text())
+  .then(code => {
+      document.querySelector('.fixed-length').innerHTML = code;
+      document.querySelector('.sol2').innerHTML = 'Result: ' + multiply(num1, num2);
+
+});
+</script>
+
+<script src="dist/sol2.js"></script>
+
+</body>
+</html>
